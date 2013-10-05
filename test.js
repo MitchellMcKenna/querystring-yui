@@ -28,6 +28,7 @@ var qsTestCases = [
   ["foo[bar][bla]=baz&foo[bar][bla]=blo", "foo%5Bbar%5D%5Bbla%5D%5B%5D=baz&foo%5Bbar%5D%5Bbla%5D%5B%5D=blo", {"foo":{"bar":{"bla":["baz","blo"]}}}],
   ["foo[bar][][bla]=baz&foo[bar][][bla]=blo", "foo%5Bbar%5D%5B%5D%5Bbla%5D=baz&foo%5Bbar%5D%5B%5D%5Bbla%5D=blo", {"foo":{"bar":[{"bla":"baz"},{"bla":"blo"}]}}],
   ["foo[bar][bla][]=baz&foo[bar][bla][]=blo", "foo%5Bbar%5D%5Bbla%5D%5B%5D=baz&foo%5Bbar%5D%5Bbla%5D%5B%5D=blo", {"foo":{"bar":{"bla":["baz","blo"]}}}],
+  ["foo[2][bar]=baz&foo[2][bla]=blo", "foo%5B2%5D%5Bbar%5D=baz&foo%5B2%5D%5Bbla%5D=blo", {"foo":{"2":{"bar":"baz","bla":"blo"}}}],
   [" foo = bar ", "foo=bar", {"foo":"bar"}]
 ];
 
