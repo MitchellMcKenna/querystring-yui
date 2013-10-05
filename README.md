@@ -15,7 +15,7 @@ and __querystring-stringify__ sub-modules, repsectively.
 ### parse example
 
     var sys = require("util");
-    var qs = require("./querystring");
+    var qs = require("querystring-yui");
 
     var str = qs.parse("foo=bar&baz=qux");
     sys.puts(JSON.stringify(str)); // => {"foo":"bar","baz":"qux"}
@@ -28,7 +28,7 @@ and __querystring-stringify__ sub-modules, repsectively.
 ### stringify example
 
     var sys = require("util");
-    var qs = require("./querystring");
+    var qs = require("querystring-yui");
 
     var obj = {"foo":"bar","baz":"qux"};
     sys.puts(qs.stringify(obj)); // => foo=bar&baz=qux

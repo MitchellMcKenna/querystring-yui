@@ -1,0 +1,11 @@
+{
+  "name": "querystring-yui",
+  "description": "A robust querystring parsing module for node.js, based on the YUI QueryString module.",
+  "version": "0.0.1",
+  "main": "querystring.js",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MitchellMcKenna/querystring-yui"
+  }
+}
