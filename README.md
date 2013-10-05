@@ -23,6 +23,8 @@ and __querystring-stringify__ sub-modules, repsectively.
     str = qs.parse("foo[bar][][bla]=baz");
     sys.puts(JSON.stringify(str)); // => {"foo":{"bar":[{"bla":"baz"}]}}
 
+    str = qs.parse(["foo[2][bar]=baz&foo[2][bla]=blo");
+    sys.puts(JSON.stringify(str)); // => {"foo":{"2":{"bar":"baz","bla":"blo"}}}],
 
 
 ### stringify example
@@ -35,6 +37,9 @@ and __querystring-stringify__ sub-modules, repsectively.
 
     obj = {"foo":{"bar":[{"bla":"baz"}]}};
     sys.puts(qs.stringify(obj)); // => foo%5Bbar%5D%5B%5D%5Bbla%5D=baz
+
+    obj = {"foo":{"2":{"bar":"baz","bla":"blo"}}};
+    sys.puts(qs.stringify(obj)); // => foo[2][bar]=baz&foo[2][bla]=blo
 
 
 ## querystring-parse.js
